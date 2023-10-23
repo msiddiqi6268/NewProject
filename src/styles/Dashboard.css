@@ -1,0 +1,50 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: 15% 80%;
+}
+
+
+.line-chart{
+    width:100%;
+    background-color: var(--light-background);
+    border-radius: 20px;
+    padding:20px;
+    margin-top: 20px;
+}
+
+.middle-boxes{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:20px auto;
+    /* padding:20px; */
+    gap:5px;
+}
+
+.middle-box{
+    background-color: var(--light-background);
+    padding:20px;
+    border-radius: 20px;
+    width:300px;
+    /* height: 100px; */
+}
+
+
+.middle-box h2{
+    text-align: right;
+}
+.bar-charts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+    gap:20px;
+}
+
+.bar-chart{
+    background-color: var(--light-background);
+    border-radius: 20px;
+    width:50%;
+    padding:20px;
+}

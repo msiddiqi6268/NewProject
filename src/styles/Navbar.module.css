@@ -1,0 +1,10 @@
+.navbar *{
+    font-family: 'lemon-milk'!important;
+    font-size: 20px;
+    font-weight: normal;
+}
+.settings-items{
+    font-size: 10px !important;     
+    margin:auto 20px;
+    font-weight: 200;
+}

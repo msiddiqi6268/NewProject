@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'oswald';
+  src: url('/public/fonts/Oswald-Regular.ttf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('/public/fonts/Oswald-Medium.ttf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('/public/fonts/Oswald-Bold.ttf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'lemon-milk';
+  src: url('/public/fonts/LEMONMILK-Regular.otf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'lemon-milk';
+  src: url('/public/fonts/LEMONMILK-Bold.otf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'lemon-milk';
+  src: url('/public/fonts/LEMONMILK-Medium.otf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'product-sans';
+  src: url('/public/fonts/Product\ Sans\ Bold.ttf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Product-Sans-Regular';
+  src: url('/fonts/Product-Sans-Regular.ttf') format('truetype'); /* Specify the path to your regular font */
+  font-weight: normal;
+}
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
