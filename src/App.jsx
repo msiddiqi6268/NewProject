@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './containers/Login'
 import AuthPages from './containers/AuthPages'
 import Dashboard from './containers/Dashboard'
+import LiveSession from './containers/LiveSession'
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ const App = () => {
       <Route exact path = '/login' element = {<AuthPages  comp = 'login' />} />
       <Route exact path = '/signup' element = {<AuthPages  comp = 'signup' />} />
       <Route exact path = '/dashboard' element = {<Dashboard />} />
+      <Route exact path = '/live-session' element = {<LiveSession />} />
     </Routes>
     </BrowserRouter>
   )

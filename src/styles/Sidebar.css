@@ -1,7 +1,7 @@
 
 .sidebar-container{
-    width:120px;
-    height: 120vh;
+    width:90px;
+    height: 125vh;
     background: rgb(255,128,0);
     background: linear-gradient(0deg, var(--orange) 0%, rgb(255, 94, 0) 100%);
     margin:20px 20px;
@@ -47,3 +47,4 @@
 .tour-box h1{
     font-size: 22px;
 }
+

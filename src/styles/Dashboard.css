@@ -12,14 +12,21 @@
     margin-top: 20px;
 }
 
+.DashboardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
 .middle-boxes{
     display:flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin:20px auto;
     /* padding:20px; */
     gap:5px;
+    width: 100%;
 }
 
 .middle-box{
@@ -35,6 +42,7 @@
     text-align: right;
 }
 .bar-charts{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,3 +57,56 @@
     padding:20px;
 }
 
+.live-session-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap:10px;
+}
+
+.live-session-input-container, .snap-chart{
+    width:48%;
+    height: 125vh;
+    background-color: var(--light-background);
+    border-radius: 20px;
+}
+
+.live-session-input-container{
+    position: relative;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.live-top-cont{
+    height: 90%;
+    width: 100%;
+}
+
+.live-session-input-container::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url('/public/backgrounds/robotic.png');
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index:-1;
+    /* z-index: -1; */
+}
+
+.snap-chart{
+    padding:20px;
+}
