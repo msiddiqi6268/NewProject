@@ -3,7 +3,7 @@
     width:120px;
     height: 120vh;
     background: rgb(255,128,0);
-    background: linear-gradient(0deg, rgba(255,128,0,1) 0%, rgba(255,171,0,1) 100%);
+    background: linear-gradient(0deg, var(--orange) 0%, rgb(255, 94, 0) 100%);
     margin:20px 20px;
     display: flex;
     flex-direction: column;
@@ -35,4 +35,15 @@
 .sidebar-button-icon{
     font-size: 30px!important;
     color:rgb(240, 238, 238);
+}
+
+
+.tour-box{
+    font-family: 'product-sans';
+    color:white;
+    text-align: left;
+}
+
+.tour-box h1{
+    font-size: 22px;
 }
