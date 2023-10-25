@@ -141,3 +141,22 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.analyze-data{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width:100%;
+    height:125vh;
+}
+
+
+.dashboard-four-containers{
+    width:48%;
+    height:50%;
+    background-color: var(--light-background);
+    border-radius: 20px;
+    padding:20px;
+}
