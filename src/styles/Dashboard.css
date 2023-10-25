@@ -110,3 +110,34 @@
 .snap-chart{
     padding:20px;
 }
+
+.dashboard-big-container{
+    width: 100%;
+    height: 125vh;
+    border-radius: 20px;
+    background-color: var(--light-background);
+    padding:20px;
+    font-family: 'lemon-milk', sans-serif !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    gap:20px;
+}
+
+.orange-heading{
+    color:var(--orange);
+    font-size: 20px !important;
+    margin:10px;
+    font-family: 'lemon-milk';
+    font-weight: normal;
+}
+.white-heading{
+    font-size: 80px;
+    color:white;
+    font-family: 'product-sans';
+    font-weight: bold;
+    text-transform: uppercase;
+}
