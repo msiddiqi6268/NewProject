@@ -1,0 +1,116 @@
+
+
+.auth-container{
+    background-color: var(--dark-background);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* flex-direction: column; */
+    color:white;
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+.auth-left-container{
+    width:39%;
+    margin:auto;
+    
+}
+
+ .auth-form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin:auto;
+    padding:40px 100px;
+    justify-content: space-around;
+    background-color: var(--light-background);
+    margin:40px auto;
+    border-radius: 20px;
+}
+
+.auth-right-container{
+    position: relative;
+    width:50%;
+    height: 100vh;
+    padding:40px 50px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.auth-right-container::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url('/public/backgrounds/robotic.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.auth-heading{
+    color:var(--orange);
+    text-align:center;
+    font-family: 'oswald';
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.input-label{
+    font-family: 'oswald';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.input-container{
+    width:100%;
+}
+
+.form-extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.auth-social-icons{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+.auth-social-icon{
+    font-size: 120px;
+    color:rgb(230, 230, 230)
+
+}
+
+
+.auth-side-main-heading{
+    font-size: 80px;    
+    font-family: 'oswald';
+    font-weight: 300;
+    opacity:1;
+    line-height: 100px;
+}
+.auth-side-shadow-heading{
+    font-size: 120px;
+    font-family: 'product-sans';
+    text-transform: uppercase;
+    line-height: 110px;
+    text-shadow: -6px 0px var(--orange);
+}
+
+.auth-side-description{
+    font-family: 'product-sans';
+    font-size: 30px;
+    font-weight: lighter;
+}

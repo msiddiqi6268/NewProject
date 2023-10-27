@@ -1,0 +1,50 @@
+
+.sidebar-container{
+    width:90px;
+    height: 125vh;
+    background: rgb(255,128,0);
+    background: linear-gradient(0deg, var(--orange) 0%, rgb(255, 94, 0) 100%);
+    margin:20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 10px;
+}
+
+.sidebar-logo{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.sidebar-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:100%;
+    font-size: 16px!important;
+    color:rgb(240, 238, 238) !important;
+    min-width: auto;
+    gap:15px;
+}
+
+.sidebar-button-icon{
+    font-size: 30px!important;
+    color:rgb(240, 238, 238);
+}
+
+
+.tour-box{
+    font-family: 'product-sans';
+    color:white;
+    text-align: left;
+}
+
+.tour-box h1{
+    font-size: 22px;
+}
+
