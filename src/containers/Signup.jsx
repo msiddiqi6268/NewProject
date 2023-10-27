@@ -10,7 +10,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 const Signup = () => {
     const navigate = useNavigate()
     return (
-        <>
+        <form className = 'auth-form'>
             <h1 className='auth-heading'>Register</h1>
             <Box className='input-container'>
                 <label className='input-label'>Username:</label>
@@ -75,7 +75,7 @@ const Signup = () => {
                 </IconButton>
             </Box>
             
-        </>
+        </form>
     )
 }
 

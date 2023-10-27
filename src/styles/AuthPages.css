@@ -12,9 +12,14 @@
     gap:15px;
     align-items: center;
 }
-
 .auth-left-container{
     width:39%;
+    margin:auto;
+    
+}
+
+ .auth-form{
+    width:100%;
     display: flex;
     flex-direction: column;
     gap:10px;

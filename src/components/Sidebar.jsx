@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Joyride from 'react-joyride'
-// import 'intro.js/introjs.css';
 import '../styles/Sidebar.css'
 import { Home } from '@mui/icons-material'
 import { Box, Button } from '@mui/material'
@@ -10,7 +9,7 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
 import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
-    const [runTour, setRunTour] = useState(false);
+    const [runTour, setRunTour] = useState(true);
     const navigate = useNavigate()
     const steps = [
         {
@@ -73,7 +72,12 @@ const Sidebar = () => {
                     </Button>
                 ))}
             </Box>
-            <Button variant='text' className='sidebar-button'>
+            <Button variant='text' className='sidebar-button'
+            onClick = {()=>{
+                localStorage.setItem('login','no')
+                navigate('/login')
+            }}
+            >
                 {<LogoutRoundedIcon className='sidebar-button-icon' />}
                 {"Logout"}
             </Button>
