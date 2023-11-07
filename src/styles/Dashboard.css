@@ -160,3 +160,8 @@
     border-radius: 20px;
     padding:20px;
 }
+
+
+.full-screen-charts svg{
+    height: 100% !important;
+}

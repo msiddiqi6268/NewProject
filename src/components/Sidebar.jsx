@@ -9,7 +9,7 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
 import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
-    const [runTour, setRunTour] = useState(true);
+    const [runTour, setRunTour] = useState(false);
     const navigate = useNavigate()
     const steps = [
         {
