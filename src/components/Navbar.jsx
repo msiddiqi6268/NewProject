@@ -14,15 +14,15 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useNavigate } from 'react-router-dom';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Dashboard', 'Home', 'HIstory', 'FAQ\'s'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
+  const navigate  = useNavigate()
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -122,7 +122,10 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>{
+                  const url = '/'+page.replace("'", '')
+                  navigate(url.toLowerCase())
+                }}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 className = 'nav-menu-items'
               >

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box,FormControlLabel, Checkbox, Typography, IconButton} from '@mui/material'
+import { Box, FormControlLabel, Checkbox, Typography, IconButton } from '@mui/material'
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import HttpsRoundedIcon from '@mui/icons-material/HttpsRounded';
 import AuthInput from '../components/mui/AuthInput';
@@ -7,10 +7,30 @@ import { Link, useNavigate } from 'react-router-dom';
 import OrangeButton from '../components/mui/OrangeButtons';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import { useState } from 'react';
+import TermsAndConditions from './TermsAndConditions';
+import CloseIcon from '@mui/icons-material/Close';
 const Signup = () => {
     const navigate = useNavigate()
+    const [showTerms, setShowTerms] = useState(false)
+
+    const decline = ()=>{setShowTerms(false)}
+    const accept = ()=>{
+        localStorage.setItem('login', 'yes')
+        navigate('/dashboard')
+    }
+
+
     return (
-        <form className = 'auth-form'>
+        <form className='auth-form'>
+            {showTerms ? <Box className='terms-container'>
+                <IconButton className = 'terms-close-button'
+                onClick = {()=>{setShowTerms(false)}}
+                >
+                    <CloseIcon sx={{color:'white'}} />
+                </IconButton>
+               <TermsAndConditions decline = {decline} accept = {accept} />
+            </Box> : null}
             <h1 className='auth-heading'>Register</h1>
             <Box className='input-container'>
                 <label className='input-label'>Username:</label>
@@ -49,7 +69,11 @@ const Signup = () => {
                     variant="outlined"
                 />
             </Box>
-            <OrangeButton>Register</OrangeButton>
+            <OrangeButton
+                onClick={() => {
+                    setShowTerms(true)
+                }}
+            >Register</OrangeButton>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -59,9 +83,9 @@ const Signup = () => {
             }}>
                 <Typography variant='body2'>Already have an account?</Typography>
                 <OrangeButton sx={{ padding: '5px 40px', fontSize: '16px' }}
-                onClick = {()=>{
-                    navigate('/login')
-            }}
+                    onClick={() => {
+                        navigate('/login')
+                    }}
                 >Login</OrangeButton>
             </Box>
             <Typography variant='h3' sx={{ textAlign: 'center' }}>OR</Typography>
@@ -74,7 +98,7 @@ const Signup = () => {
 
                 </IconButton>
             </Box>
-            
+
         </form>
     )
 }
