@@ -12,7 +12,7 @@ const LiveSession = () => {
     <div>
             <Navbar />
             <Box className='dashboard' >
-                <Sidebar className='dashboard-sidebar' />
+            <Sidebar className='dashboard-sidebar' />
                 <Box className='live-session-container'>
                     <Box className='live-session-input-container'>
                         <Box className = 'live-top-cont'>

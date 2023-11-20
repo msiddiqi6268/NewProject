@@ -74,7 +74,8 @@ const Sidebar = () => {
             </Box>
             <Button variant='text' className='sidebar-button'
             onClick = {()=>{
-                localStorage.setItem('login','no')
+                localStorage.removeItem('accessToken')
+                localStorage.removeItem('refreshToken')
                 navigate('/login')
             }}
             >

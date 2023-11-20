@@ -10,10 +10,13 @@ import OrangeButton from '../components/mui/OrangeButtons';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import { useFormik } from 'formik';
+import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
+import { login } from '../redux/auth/action';
 
 const Login = () => {
     const [error, setError] = useState(false)
+    const dispatch = useDispatch()
     const formik = useFormik({
         initialValues: {
             username: '',
@@ -24,24 +27,8 @@ const Login = () => {
             password: Yup.string().required('Password is required'),
         }),
         onSubmit: (values) => {
-            console.log(values)
-            console.log(users)
             setError(false)
-            let loaded_user = null
-            for (let i = 0; i < users.length; i++) {
-                if (users[i]['username'] === values.username && users[i]['password'] === values.password) {
-                    loaded_user = users[i]
-                    console.log(users[i])
-                }
-            }
-            if (loaded_user) {
-                localStorage.setItem('login', 'yes')
-                navigate('/dashboard')
-            }
-            else {
-                localStorage.setItem('login', 'no')
-                setError(true)
-            }
+            dispatch(login(values))
         },
     })
 

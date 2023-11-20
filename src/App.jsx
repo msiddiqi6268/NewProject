@@ -13,18 +13,18 @@ import Faqs from './containers/Faqs'
 const App = () => {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route exact path = '/' element = {<Home />} />
-      <Route exact path = '/login' element = {<AuthPages  comp = 'login' />} />
-      <Route exact path = '/signup' element = {<AuthPages  comp = 'signup' />} />
-      <Route exact path = '/' element = {<PrivateRoutes />}>
-      <Route exact path = '/dashboard' element = {<Dashboard />} />
-      <Route exact path = '/live-session' element = {<LiveSession />} />
-      <Route exact path = '/upload-video' element = {<UploadVideo />} />
-      <Route exact path = '/analyze-data' element = {<AnalyzeData />} />
-      <Route exact path = '/faqs' element = {<Faqs />} />
-      </Route>
-    </Routes>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/login' element={<AuthPages comp='login' />} />
+        <Route exact path='/signup' element={<AuthPages comp='signup' />} />
+        <Route exact path='/' element={<PrivateRoutes />}>
+          <Route exact path='/dashboard' element={<Dashboard />} />
+          <Route exact path='/live-session' element={<LiveSession />} />
+          <Route exact path='/upload-video' element={<UploadVideo />} />
+          <Route exact path='/analyze-data' element={<AnalyzeData />} />
+          <Route exact path='/faqs' element={<Faqs />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }
