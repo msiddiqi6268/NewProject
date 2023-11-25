@@ -186,7 +186,21 @@
 
 .empty-container{
    background-color: var(--light-background);
-   width:300px;
+   width:25vw;
    height: 400px; 
    border-radius: 5px;
+}
+
+
+.text-page-inputs{
+    font-size: 20px;
+    background-color: var(--light-background);
+    /* outline:none; */
+    border:none;
+    color:white;
+    padding:15px 5px;
+    font-family: 'oswald';
+}
+.focused{
+    background-color: orange;
 }
