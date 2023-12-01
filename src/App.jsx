@@ -11,6 +11,7 @@ import AnalyzeData from './containers/AnalyzeData'
 import PrivateRoutes from './PrivateRoutes'
 import Faqs from './containers/Faqs'
 import TextPage from './containers/TextPage'
+import HistoryPage from './containers/HistoryPage'
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => {
           <Route exact path='/analyze-data' element={<AnalyzeData />} />
           <Route exact path='/faqs' element={<Faqs />} />
           <Route exact path='/text-page' element={<TextPage />} />
+          <Route exact path = '/history' element = {<HistoryPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

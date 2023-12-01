@@ -8,6 +8,7 @@ import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
 import { useNavigate } from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
 const Sidebar = () => {
     const [runTour, setRunTour] = useState(false);
     const navigate = useNavigate()
@@ -59,7 +60,11 @@ const Sidebar = () => {
     return (
         <Box className='sidebar-container'>
 
-            <Box className='sidebar-logo'></Box>
+            <Box>
+            <Avatar alt="Remy Sharp" src="src\assets\pp\profile_pic.jpg" 
+            sx={{ width: '80px', height: '80px' }}
+            />
+            </Box>
             <Box>
                 {items.map((item, index) => (
                     <Button variant='text' className={`sidebar-button tour-${index}`} key={index}
